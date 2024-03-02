@@ -2,10 +2,6 @@
     font-family: ArmCoronet;
     src: url(./Fonts/ARTAR_TUMANIANDZERAGIR_U.ttf);
 }
-@font-face {
-    font-family: ArmCoronetBold;
-    src: url(./Fonts/ARTARUMIANBARAK-BOLD-8926.ttf);
-}
 
 * {
     margin: 0;
@@ -112,7 +108,6 @@ main {
 }
 
 .arrow {
-    /* z-index: 2; */
     position: absolute;
     bottom: 10%;
     left: 50%;
@@ -170,7 +165,7 @@ main {
     top: 25%;
     left: 15%;
     opacity: 0;
-    animation: 2s linear 0.1s 1 forwards;
+    animation: 2s linear 0.3s 1 forwards;
 
 }
 
@@ -229,14 +224,6 @@ main {
     justify-content: center;
 }
 
-/* .maps {
-    margin-bottom: 40px;
-    width: 80%;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 
 .rest {
     margin: 40px 0 60px;
@@ -292,7 +279,7 @@ main {
 
 .map_cont  a img {
     width: 300px;
-    height: 180px;
+    height: 200px;
 }
 
 }
