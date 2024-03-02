@@ -154,7 +154,7 @@ main {
     position: absolute;
     top: 8%;
     left: calc(50% - 25%);
-    opacity: 0;
+    opacity: 1;
     animation: 2s linear 0.1s 1 forwards;
 }
 
