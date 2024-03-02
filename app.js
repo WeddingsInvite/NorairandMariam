@@ -19,13 +19,13 @@ window.addEventListener("scroll", () => {
     if (window.scrollY > 700) {
         img5.style.animationName = "img5_opacity";
     };
-    if (window.scrollY > 1400) {
+    if (window.scrollY > 720) {
         img6.style.animationName = "img6_opacity";
     }
-    if (window.scrollY > 1400) {
+    if (window.scrollY > 1000) {
         img7.style.animationName = "img7_opacity";
     }
-    if (window.scrollY > 1400) {
+    if (window.scrollY > 1000) {
         img8.style.animationName = "img8_opacity";
     }
 })
