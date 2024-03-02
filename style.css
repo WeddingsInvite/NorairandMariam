@@ -1,0 +1,298 @@
+@font-face {
+    font-family: ArmCoronet;
+    src: url(./Fonts/ARTAR_TUMANIANDZERAGIR_U.ttf);
+}
+@font-face {
+    font-family: ArmCoronetBold;
+    src: url(./Fonts/ARTARUMIANBARAK-BOLD-8926.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffaf4;
+}
+
+main {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebe4dc;
+
+}
+
+
+.first_div,
+.second_div,
+.third_div,
+.fourth_div {
+    position: relative;
+}
+
+
+
+
+.img1 {
+    position: absolute;
+    top: 10%;
+    left: -18%;
+    opacity: 0;
+    animation: img1_opacity 2s linear 0.2s 1 forwards;
+}
+
+@keyframes img1_opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+#img3 {
+    position: absolute;
+    top: 42%;
+    left: 30%;
+    transform: scale(0);
+    animation: img3_opacity 1s linear 1s 1 forwards;
+
+}
+
+@keyframes img3_opacity {
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+
+#names {
+    position: absolute;
+    top: 62%;
+    left: 20%;
+    opacity: 0;
+    animation: names 2s linear 2s 1 forwards;
+}
+
+@keyframes names {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.timer {
+    width: 40%;
+    position: absolute;
+    color: rgb(41, 65, 52);
+    font-size: 50px;
+    bottom: 18%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 70px;
+    padding: 0 10px;
+    font-family: ArmCoronet;
+}
+
+.timer section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timer section:last-child {
+    font-size: 50px;
+}
+
+.arrow {
+    /* z-index: 2; */
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    animation: arrowDown 1s linear infinite;
+}
+
+@keyframes arrowDown {
+    0% {
+        bottom: 5%;
+
+    }
+
+    50% {
+        bottom: 0%;
+    }
+
+    100% {
+        bottom: 5%;
+    }
+}
+
+
+
+
+#img4 {
+    position: absolute;
+    top: 8%;
+    left: calc(50% - 25%);
+    opacity: 0;
+    animation: 2s linear 0.1s 1 forwards;
+}
+
+@keyframes img4_opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+#img5 {
+    position: absolute;
+    top: 5%;
+    left: calc(50% - 20%);
+    opacity: 0;
+    animation: 2s linear 0.1s 1 forwards;
+}
+
+@keyframes img5_opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+#img6 {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    opacity: 0;
+    animation: 2s linear 0.1s 1 forwards;
+
+}
+
+@keyframes img6_opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+#img7 {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    z-index: 3;
+    opacity: 0;
+    animation: 2s linear 0.1s 1 forwards;
+
+}
+
+@keyframes img7_opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+#img8 {
+    position: absolute;
+    top: -30%;
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+    animation: 2s linear 0.1s 1 forwards;
+
+}
+
+@keyframes img8_opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+.maps {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map_cont {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 40%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .maps {
+    margin-bottom: 40px;
+    width: 80%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.rest {
+    margin: 40px 0 60px;
+}
+.map_cont a {
+    margin-top: 60px;
+}
+
+
+@media screen and (max-width: 900px) {
+    main {
+        width: 100%;
+    }
+
+    .timer section {
+        font-size: 35px;
+    }
+
+    .timer section:last-child {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+
+    .timer section {
+        font-size: 25px;
+    }
+
+    .timer section:last-child {
+        font-size: 20px;
+    }
+.rest {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.map_cont a {
+    margin-top: 30px;
+}
+
+.map_cont  a img {
+    width: 350px;
+    height: 200px;
+}
+
+}
+
+
+@media screen and (max-width: 375px) {
+
+
+.map_cont  a img {
+    width: 300px;
+    height: 180px;
+}
+
+}
